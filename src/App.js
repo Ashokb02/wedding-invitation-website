@@ -20,7 +20,11 @@ import mn6 from "./images/mn6.jpg";
 import mn7 from "./images/mn7.jpg";
 import mn8 from "./images/mn8.jpg";
 
+import song from "./music/Kumkumala.mp3";
+
 import ppr2 from "./images/ppr2.jpg";
+
+ 
 
 const DEFAULT_IMAGES = [mn1, mn2, mn3, mn4, mn5, mn6, mn7, mn8];
 const DEFAULT_IMAGES2 = [ppr2];
@@ -113,7 +117,7 @@ export default function App() {
 
     story:
       "“True love is not possession, it is liberation.” – Bhagavad Gita",
-    phone: "+91 7997417411",
+    phone: "+91 6366454505",
   });
 
   const targetDate = new Date(data.date);
@@ -134,6 +138,10 @@ export default function App() {
             <Heart className="brand-icon" />
             {data.groomName} & {data.brideName}
           </Navbar.Brand>
+            <div>
+     
+
+    </div>
           <Button
             className="menu-toggle"
             onClick={() => setShowSidebar(true)}
@@ -239,12 +247,39 @@ export default function App() {
       </section>
 
       {/* Our Story Section */}
+
+     
+
+
       <section id="story" className="story-section">
         <Container>
           <Row className="align-items-center">
+
+            
+           
             <Col lg={6}>
+            <div>
+               <button 
+        style={{
+          padding: "10px 20px",
+          borderRadius: "100px",
+          background: "#bc408cff",
+          color: "white",
+          border: "none",
+          cursor: "pointer",
+          fontSize: "16px",
+          margin: "40px"
+        }}
+      > <p> Play Song 🎶</p><audio controls autoPlay loop>
+        <source src={song} type="audio/mp3" />
+      </audio>
+       
+      </button>
+            </div>
               <div className="story-content">
+                
                 <h2 className="section-title">Our Love Story</h2>
+               
                 <p className="story-text">{data.story}</p>
                 <p className="story-text">
                   “Marriage in Hindu dharma is not just a social ceremony. It is
