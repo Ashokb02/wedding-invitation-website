@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/wedding-invitation-website/static/css/main.4b014950.css",
-    "main.js": "/wedding-invitation-website/static/js/main.8f54fdfe.js",
+    "main.js": "/wedding-invitation-website/static/js/main.9e88b57c.js",
     "static/js/453.b0928d06.chunk.js": "/wedding-invitation-website/static/js/453.b0928d06.chunk.js",
+    "static/media/Kumkumala.mp3": "/wedding-invitation-website/static/media/Kumkumala.892f88fe3178df7bb5d7.mp3",
     "static/media/mn5.jpg": "/wedding-invitation-website/static/media/mn5.07adab39da0628efe24c.jpg",
     "static/media/mn1.jpg": "/wedding-invitation-website/static/media/mn1.ca1200e263dc044f9ec8.jpg",
     "static/media/mn4.jpg": "/wedding-invitation-website/static/media/mn4.c7c8aeea3760e4df737d.jpg",
@@ -14,11 +15,11 @@
     "static/media/ppr2.jpg": "/wedding-invitation-website/static/media/ppr2.6e94f301273d648440cc.jpg",
     "index.html": "/wedding-invitation-website/index.html",
     "main.4b014950.css.map": "/wedding-invitation-website/static/css/main.4b014950.css.map",
-    "main.8f54fdfe.js.map": "/wedding-invitation-website/static/js/main.8f54fdfe.js.map",
+    "main.9e88b57c.js.map": "/wedding-invitation-website/static/js/main.9e88b57c.js.map",
     "453.b0928d06.chunk.js.map": "/wedding-invitation-website/static/js/453.b0928d06.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b014950.css",
-    "static/js/main.8f54fdfe.js"
+    "static/js/main.9e88b57c.js"
   ]
 }
