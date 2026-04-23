@@ -36,7 +36,9 @@ code {
 
 /* CSS Variables for consistent theming */
 :root {
-  --primary-color: #d63384;
+  /* --primary-color: #d63384; */
+    --primary-color: #2563EB;
+
   --primary-light: #cd0b0b;
   --primary-dark: #b02a5b;
   --secondary-color: #6f42c1;
@@ -226,6 +228,7 @@ body {
 .brand-icon {
   margin-right: 0.5rem;
   color: var(--primary-color);
+  fill: #2563EB;
 }
 
 .menu-toggle {
@@ -299,9 +302,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(214, 51, 132, 0.5), rgba(111, 66, 193, 0.8));
-  display: flex;
-  align-items: center;
+  /* background: linear-gradient(135deg, rgba(214, 51, 132, 0.5), rgba(111, 66, 193, 0.8)); */
+/* background: linear-gradient(135deg, rgba(37, 99, 235, 0.7), rgba(147, 197, 253, 0.7));  display: flex; */
+  background: linear-gradient(
+  135deg,
+  rgba(255, 255, 255, 0.6),
+  rgba(147, 197, 253, 0.5)
+);
+display: flex;
+align-items: center;
   justify-content: center;
 }
 

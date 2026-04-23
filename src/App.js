@@ -11,14 +11,14 @@ import {
 } from "react-bootstrap";
 import { Heart, MapPin, Calendar, Clock, Users, Camera } from "lucide-react";
 import "./index.css";
-import mn1 from "./images/mn1.jpg";
-import mn2 from "./images/mn2.jpg";
-import mn3 from "./images/mn3.jpg";
-import mn4 from "./images/mn4.jpg";
-import mn5 from "./images/mn5.jpg";
-import mn6 from "./images/mn6.jpg";
-import mn7 from "./images/mn7.jpg";
-import mn8 from "./images/mn8.jpg";
+import mn1 from "./images/mn1.jpeg";
+import mn2 from "./images/mn2.jpeg";
+import mn3 from "./images/mn3.jpeg";
+import mn4 from "./images/mn4.jpeg";
+import mn5 from "./images/mn5.jpeg";
+import mn6 from "./images/mn6.jpeg";
+import mn7 from "./images/mn7.jpeg";
+import mn8 from "./images/mn8.jpeg";
 
 import song from "./music/Kumkumala.mp3";
 
@@ -105,11 +105,11 @@ function FloatingHearts() {
 export default function App() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [data, setData] = useState({
-    groomName: "Manikanta",
-    brideName: "Nagaveni",
-    date: "2025-10-03T02:00:00",
-    muhurtham: "02:00 AM to 03:00 AM",
-    reception: " Thursday, Oct 02 7:00 PM onwards",
+    groomName: "Bhargav",
+    brideName: "Lavanya",
+    date: "2026-04-26T07:00:00",
+    muhurtham: "06:45 AM to 07:45 AM",
+    reception: " Saturday, Apr 25 7:00 PM onwards",
     venueAddress:
       "PPR Convention Hall, Near RTO Office, Thattivaripalli  Madanapalle (Bypass Road), Andhra Pradesh, India",
     images: DEFAULT_IMAGES,
@@ -117,7 +117,7 @@ export default function App() {
 
     story:
       "“True love is not possession, it is liberation.” – Bhagavad Gita",
-    phone: "+91 6366454505",
+    phone: "+91 7997414131",
   });
 
   const targetDate = new Date(data.date);
@@ -263,7 +263,8 @@ export default function App() {
         style={{
           padding: "10px 20px",
           borderRadius: "100px",
-          background: "#bc408cff",
+          // background: "#bc408cff",
+          background: "#2563EB",
           color: "white",
           border: "none",
           cursor: "pointer",
