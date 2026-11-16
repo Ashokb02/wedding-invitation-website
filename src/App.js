@@ -102,7 +102,7 @@ function FloatingHearts() {
 
 export default function App() {
   const [showSidebar, setShowSidebar] = useState(false);
-  const [data, setData] = useState({
+  const [data] = useState({
     groomName: "Bhargava Sai",
     brideName: "Ashwini",
     date: "2026-11-19T07:00:00",
