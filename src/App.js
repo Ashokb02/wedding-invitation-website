@@ -11,20 +11,18 @@ import {
 } from "react-bootstrap";
 import { Heart, MapPin, Calendar, Clock, Users, Camera } from "lucide-react";
 import "./index.css";
-import mn1 from "./images/mn1.jpeg";
-import mn2 from "./images/mn2.jpeg";
-import mn3 from "./images/mn3.jpeg";
-import mn4 from "./images/mn4.jpeg";
-import mn5 from "./images/mn5.jpeg";
-import mn6 from "./images/mn6.jpeg";
-import mn7 from "./images/mn7.jpeg";
-import mn8 from "./images/mn8.jpeg";
+import mn1 from "./images/mn1.jpg";
+import mn2 from "./images/mn2.jpg";
+import mn3 from "./images/mn3.jpg";
+import mn4 from "./images/mn4.webp";
+import mn5 from "./images/mn5.jpg";
+import mn6 from "./images/mn6.jpg";
+import mn7 from "./images/mn7.jpg";
+import mn8 from "./images/mn8.jpg";
 
 import song from "./music/Kumkumala.mp3";
 
 import ppr2 from "./images/ppr2.jpg";
-
- 
 
 const DEFAULT_IMAGES = [mn1, mn2, mn3, mn4, mn5, mn6, mn7, mn8];
 const DEFAULT_IMAGES2 = [ppr2];
@@ -47,7 +45,7 @@ function CountdownTimer({ targetDate }) {
         setTimeLeft({
           days: Math.floor(distance / (1000 * 60 * 60 * 24)),
           hours: Math.floor(
-            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
           ),
           minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
           seconds: Math.floor((distance % (1000 * 60)) / 1000),
@@ -105,19 +103,18 @@ function FloatingHearts() {
 export default function App() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [data, setData] = useState({
-    groomName: "Bhargav",
-    brideName: "Lavanya",
-    date: "2026-04-26T07:00:00",
-    muhurtham: "06:45 AM to 07:45 AM",
-    reception: " Saturday, Apr 25 7:00 PM onwards",
+    groomName: "Bhargava Sai",
+    brideName: "Ashwini",
+    date: "2026-11-19T07:00:00",
+    muhurtham: "08:30 AM to 09:30 AM",
+    reception: " Wednesday, Nov 18 7:00 PM onwards",
     venueAddress:
-      "PPR Convention Hall, Near RTO Office, Thattivaripalli  Madanapalle (Bypass Road), Andhra Pradesh, India",
+      "N.J.R KALYANAMANDAPAM, Pungunur Road, Madanapalle Town, Annamayya Dist",
     images: DEFAULT_IMAGES,
     images2: DEFAULT_IMAGES2,
 
-    story:
-      "“True love is not possession, it is liberation.” – Bhagavad Gita",
-    phone: "+91 7997414131",
+    story: "“True love is not possession, it is liberation.” – Bhagavad Gita",
+    phone: "+91 9618517235",
   });
 
   const targetDate = new Date(data.date);
@@ -138,10 +135,7 @@ export default function App() {
             <Heart className="brand-icon" />
             {data.groomName} & {data.brideName}
           </Navbar.Brand>
-            <div>
-     
-
-    </div>
+          <div></div>
           <Button
             className="menu-toggle"
             onClick={() => setShowSidebar(true)}
@@ -248,39 +242,34 @@ export default function App() {
 
       {/* Our Story Section */}
 
-     
-
-
       <section id="story" className="story-section">
         <Container>
           <Row className="align-items-center">
-
-            
-           
             <Col lg={6}>
-            <div>
-               <button 
-        style={{
-          padding: "10px 20px",
-          borderRadius: "100px",
-          // background: "#bc408cff",
-          background: "#2563EB",
-          color: "white",
-          border: "none",
-          cursor: "pointer",
-          fontSize: "16px",
-          margin: "40px"
-        }}
-      > <p> Play Song 🎶</p><audio controls autoPlay loop>
-        <source src={song} type="audio/mp3" />
-      </audio>
-       
-      </button>
-            </div>
+              <div>
+                <button
+                  style={{
+                    padding: "10px 20px",
+                    borderRadius: "100px",
+                    background: "#bc408cff",
+                    // background: "#2563EB",
+                    color: "white",
+                    border: "none",
+                    cursor: "pointer",
+                    fontSize: "16px",
+                    margin: "40px",
+                  }}
+                >
+                  {" "}
+                  <p> Play Song 🎶</p>
+                  <audio controls autoPlay loop>
+                    <source src={song} type="audio/mp3" />
+                  </audio>
+                </button>
+              </div>
               <div className="story-content">
-                
                 <h2 className="section-title">Our Love Story</h2>
-               
+
                 <p className="story-text">{data.story}</p>
                 <p className="story-text">
                   “Marriage in Hindu dharma is not just a social ceremony. It is
@@ -351,14 +340,24 @@ export default function App() {
                       View on Maps
                     </Button> */}
 
-                    <Button
+                    {/* <Button
                       className="venue-btn"
-                      href="https://maps.app.goo.gl/trQigY87rTSwH3NH9"
+                      href="https://maps.app.goo.gl/c4ZQrySHJwGtiws9A"
                       target="_blank"
                     >
                       <MapPin className="me-2" />
                       View on Maps
-                    </Button>
+                    </Button> */}
+
+                   <Button
+  className="venue-btn"
+  href="https://www.google.com/maps/search/?api=1&query_place_id=ChIJI8xRKNJlsjsRQsSvzXyWHok"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <MapPin className="me-2" />
+  View on Maps
+</Button>
 
                     <Button
                       className="venue-btn ms-3"
